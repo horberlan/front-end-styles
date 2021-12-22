@@ -40,7 +40,8 @@ export default function Cards() {
         
             'Recebemos sua mensagem!',
             'Em breve retornaremos.',
-            'success'     
+            'success'    ,
+             
         )
       }else{
         alert("Algo de errado aconteceu, por favor tente novamente mais tarde.");

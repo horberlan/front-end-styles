@@ -32,19 +32,36 @@ const GlobalStyle = createGlobalStyle`
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
+h2{
+  font-size:30px;
+  font-weight:900;
+  color:#f1f1f1;
+}
 h3{
   font-size:40px;
   font-weight:900;
   color:#f1f1f1;
 }
-h3:hover{
+h3,h2:hover{
   color:#f1f1f1;
+}
+p{
+  font-size:30px;
+  color:#cccccc;
+  opacity:0.9;
+}
+p:hover{
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition:1s;
 }
 
 .img-10{
   height:500px;
 }
 }
+
 .itens {
     border-radius:10px; 
 background-color:#373943;
@@ -92,7 +109,9 @@ h1:hover{
   color:#f1f1f1;
 }
 
-
+.max-w{
+  /* max-width:400px; */
+}
 form {
     font-family: 'Poppins';
     font-style: normal;
@@ -178,6 +197,11 @@ form {
 
 @media  (max-width: 600px)
 {
+  .CardHeader{
+    margin-left:auto;
+    margin-right:auto;
+    width:20rem !important;
+  }
   .img-10{
     height:300px;
   }

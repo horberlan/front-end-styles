@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Navbar, Nav, Container,Carousel } from 'react-bootstrap';
+import { Navbar, Nav, Container,Carousel, Row,Col, Card, Button } from 'react-bootstrap';
 import Logo from '../img/logo.webp';
-import CarouselImg from '../img/download.png'
+import Img from '../img/header.jpg'
 // import CarouselImg2 from '../img/slide1.svg'
 
 
@@ -27,39 +27,25 @@ function Navigation() {
     </Nav>
     </Container>
   </Navbar>
-  <Carousel variant="dark">
-  <Carousel.Item>
-    <img
-      className="d-block w-100 img-10"
-      src={CarouselImg}
-      alt="First slide"
-    />
-     <Carousel.Caption>
-      <h3>Somos um NFT marketplace</h3>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100 img-10"
-      src={CarouselImg}
+  <Container className='mt-5 '>
+  <Row>
+    <Col><h1 className='max-w mt-5'>Descubra, colete e venda NFTs extraordinários</h1>
+    <p className='mt-5'>Somos o primeiro NFT marketplace do Brasil</p>
+    <a href="#cards"><Button variant="primary"  className='m-5'>Explorar</Button></a>
+    <a href="#contato"> <Button variant="secondary"  className='m-5'>Contato</Button></a>
+    </Col>
 
-      alt="Second slide"
-    />
-    <Carousel.Caption>
-      <h3>Somos um NFT marketplace</h3>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100 img-10"
-      src={CarouselImg}
-      alt="Third slide"
-    />
-    <Carousel.Caption>
-      <h3>Somos um NFT marketplace</h3>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+
+    <Col>
+    <Card className='CardHeader'style={{ width: '36rem', background:'transparent', border:'none',boxShadow: '5px 5px 4px 5px #373943' }}>
+  <Card.Img variant="top" src={Img} />
+  <Card.Body>
+    <Card.Title>Glacial River Above #5</Card.Title>
+  </Card.Body>
+</Card>
+    </Col>
+  </Row>
+  </Container>
 </>
 )
 }
