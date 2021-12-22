@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import {Button, Card, ListGroup,ListGroupItem, Row, Container,Col,Modal} from 'react-bootstrap';
+import React from "react";
+import { Card, ListGroup,ListGroupItem, Row, Container,Col} from 'react-bootstrap';
 import ItemUm from '../img/unnamed 1.png';
 import ItemDois from '../img/unnamed-1 1.png';
 import ItemTres from '../img/unnamed-2 1.png';
@@ -11,12 +11,7 @@ import AOS from 'aos';
 AOS.init();
 
 export default function Cards() {
-    
-const [show, setShow] = useState(false);
-
-const handleClose = () => setShow(false);
-const handleShow = () => setShow(true);
-
+ 
     return (
         <>
 <Container >
@@ -34,7 +29,7 @@ const handleShow = () => setShow(true);
   </ListGroup>
   <Card.Body>
     <Card.Link href="#" className="TypePrice">Fixed Price</Card.Link>
-    <Card.Link href="#"><button className="PriceItem" onClick={handleShow} >0.0007ETH</button></Card.Link>
+    <Card.Link href="#"><button className="PriceItem">0.0007ETH</button></Card.Link>
   </Card.Body>
 </Card>
 </Col>
@@ -164,20 +159,6 @@ const handleShow = () => setShow(true);
 </Container>
 
 
-<Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
 </>
     )
 }
