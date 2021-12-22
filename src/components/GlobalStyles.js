@@ -1,8 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
- 
+
+
 const GlobalStyle = createGlobalStyle`
-  html{
-    background-color:#222222;    
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  body{
+    background-color:#222222;
+    font-family: 'Poppins';
   }
   ::-webkit-scrollbar {
     background: #f1f1f1;
@@ -29,9 +41,9 @@ h3:hover{
   color:#f1f1f1;
 }
 
-/* cards area */
-.Navbar{
-position:fixed;
+.img-10{
+  height:500px;
+}
 }
 .itens {
     border-radius:10px; 
@@ -82,7 +94,7 @@ h1:hover{
 
 
 form {
-    font-family: Montserrat;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -105,7 +117,7 @@ form {
     
   }
   input {
-    font-family: Montserrat;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -166,6 +178,12 @@ form {
 
 @media  (max-width: 600px)
 {
+  .img-10{
+    height:300px;
+  }
+  h3{
+    text-shadow: 2px 0 0 #222222, -2px 0 0 #222222, 0 2px 0 #222222, 0 -2px 0 #222222, 1px 1px #222222, -1px -1px 0 #222222, 1px -1px 0 #222222, -1px 1px 0 #222222;
+  }
       h1,form,footer{
       position: relative;
       top: 2rem;
@@ -203,6 +221,24 @@ form {
         transform:rotate(360deg); 
     } 
 }
+
+.More{
+  color:#f1f1f1;
+  background-color:transparent;
+  border:transparent;
+}
+.More:hover{
+  color:#f1f1f1;
+  border-radius:2px;
+  background-color:transparent;
+  border-bottom: 2px solid #373943;  
+}
+.More:focus{
+background:transparent;
+border:transparent;
+outline: 0 !important;
+}
+
 `;
  
 export default GlobalStyle;

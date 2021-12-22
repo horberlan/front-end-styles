@@ -3,7 +3,7 @@ import React from 'react';
 import { Navbar, Nav, Container,Carousel } from 'react-bootstrap';
 import Logo from '../img/logo.webp';
 import CarouselImg from '../img/download.png'
-
+// import CarouselImg2 from '../img/slide1.svg'
 
 
 
@@ -30,9 +30,8 @@ function Navigation() {
   <Carousel variant="dark">
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-100 img-10"
       src={CarouselImg}
-      height={500}
       alt="First slide"
     />
      <Carousel.Caption>
@@ -41,9 +40,9 @@ function Navigation() {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-100 img-10"
       src={CarouselImg}
-      height={500}
+
       alt="Second slide"
     />
     <Carousel.Caption>
@@ -52,9 +51,8 @@ function Navigation() {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-100 img-10"
       src={CarouselImg}
-      height={500}
       alt="Third slide"
     />
     <Carousel.Caption>
