@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navbar, Nav, Container,Carousel, Row,Col, Card, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row,Col, Card, Button } from 'react-bootstrap';
 import Logo from '../img/logo.webp';
 import Img from '../img/header.jpg'
 // import CarouselImg2 from '../img/slide1.svg'
