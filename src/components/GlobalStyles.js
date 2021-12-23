@@ -27,17 +27,28 @@ const GlobalStyle = createGlobalStyle`
   background-color:#222222;
   
 }
+.TopGrid{
+  /* background-color:#f1f1f1; */
+}
+.CardLink{
+  
+  color:#222222;
+  background-color:transparent;
+  text-decoration:none;
+}
 .logo{
   -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
 h2{
+  text-align:left;
   font-size:30px;
   font-weight:900;
   color:#f1f1f1;
 }
 h3{
+  
   font-size:40px;
   font-weight:900;
   color:#f1f1f1;
@@ -49,8 +60,10 @@ p{
   font-size:30px;
   color:#cccccc;
   opacity:0.9;
+  transition:1s;
 }
 p:hover{
+  color:#cccccc;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -102,6 +115,7 @@ color:#e1e1e1;
 
 /* form */
 h1{
+  
     color:#f1f1f1;
 
 }
@@ -110,6 +124,7 @@ h1:hover{
 }
 
 .max-w{
+  text-align:left;
   /* max-width:400px; */
 }
 form {
@@ -247,6 +262,7 @@ form {
 }
 
 .More{
+  content:'Mostrar menos';
   color:#f1f1f1;
   background-color:transparent;
   border:transparent;
@@ -259,8 +275,12 @@ form {
 }
 .More:focus{
 background:transparent;
+content:'ver menos';
 border:transparent;
 outline: 0 !important;
+}
+.More:active{
+  content:'Mostrar menos';
 }
 
 `;

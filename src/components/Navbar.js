@@ -27,12 +27,12 @@ function Navigation() {
     </Nav>
     </Container>
   </Navbar>
-  <Container className='mt-5 '>
+  <Container className='mt-5 TopGrid'>
   <Row>
     <Col><h1 className='max-w mt-5'>Descubra, colete e venda NFTs extraordinários</h1>
     <p className='mt-5'>Somos o primeiro NFT marketplace do Brasil</p>
-    <a href="#cards"><Button variant="primary"  className='m-5'>Explorar</Button></a>
-    <a href="#contato"> <Button variant="secondary"  className='m-5'>Contato</Button></a>
+    <Button variant="primary"  className='m-5'><a href="#cards" className="CardLink">Explorar</a></Button>
+    <Button variant="secondary"  className='m-5'><a href="#contato" className="CardLink"> Contato</a></Button>
     </Col>
 
 

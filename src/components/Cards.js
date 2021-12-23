@@ -7,16 +7,16 @@ import ItemTres from '../img/unnamed-2 1.png';
 import ItemQuatro from '../img/unnamed-3 1.png';
 import AOS from 'aos';
 
-
-
 AOS.init();
 
 export default function Cards() {
-  const [open, setOpen] = useState(false);
+   const [open, setOpen] = useState(false);
+   
 
     return (
         <>
 <Container >
+  
   <h2 className='mt-5'>Produtos Notáveis</h2>
 <Row className='mt-5 itens' id="produtos"  data-aos="fade-right">
     <Col>
@@ -164,12 +164,14 @@ export default function Cards() {
 
 </Row>
 <button className="More mt-5 "
+        id="curtainInput" 
+        type="button" 
+        value="Open Curtain"
         onClick={() => setOpen(!open)}
         aria-controls="example-collapse-text"
         aria-expanded={open}
-      >
-        Mostrar mais
-      </button>
+
+      >Ver mais</button>
       <Collapse in={open}>
       <Row className='mt-5 itens' id="produtos"  data-aos="fade-right">
     <Col>
@@ -248,4 +250,3 @@ export default function Cards() {
 </>
     )
 }
-
