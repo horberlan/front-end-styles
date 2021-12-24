@@ -89,7 +89,7 @@ export default function Cards() {
      </form>
      </Container>
      <footer className='mt-5' id="contato">
-         <div class="text-center p- footer">
+         <div className="text-center p- footer">
           Feito com ❤️, por
     <a href="https://github.com/horberlan">Pois.nada</a>
   </div>

@@ -5,9 +5,10 @@ import ItemUm from '../img/unnamed 1.png';
 import ItemDois from '../img/unnamed-1 1.png';
 import ItemTres from '../img/unnamed-2 1.png';
 import ItemQuatro from '../img/unnamed-3 1.png';
-import AOS from 'aos';
+import Fade from 'react-reveal/Fade';
 
-AOS.init();
+
+
 
 export default function Cards() {
    const [open, setOpen] = useState(false);
@@ -18,7 +19,8 @@ export default function Cards() {
 <Container >
   
   <h2 className='mt-5'>Produtos Notáveis</h2>
-<Row className='mt-5 itens' id="produtos"  data-aos="fade-right">
+  <Fade left>
+<Row className='mt-5 itens' id="produtos">
     <Col>
 <Card  className="cards" id='cards'style={{ width: '18rem',borderRadius:'10px' }}>
   <Card.Img variant="top" 
@@ -88,8 +90,9 @@ export default function Cards() {
 </Card>
 </Col>
 </Row>
-
-<Row className='mt-5 itens abaixo'  data-aos="fade-left">
+</Fade>
+<Fade right>
+<Row className='mt-5 itens abaixo'  >
     <Col>
 <Card  className="cards" style={{ width: '18rem',borderRadius:'10px' }}>
   <Card.Img variant="top" 
@@ -156,13 +159,11 @@ export default function Cards() {
     <Card.Link href="#" className="TypePrice">Fixed Price</Card.Link>
     <Card.Link href="#"><button className="PriceItem">0.0007ETH</button></Card.Link>
   </Card.Body>
-  
 </Card>
-
-
 </Col>
 
 </Row>
+</Fade>
 <button className="More mt-5 "
         id="curtainInput" 
         type="button" 
@@ -173,7 +174,8 @@ export default function Cards() {
 
       >Ver mais</button>
       <Collapse in={open}>
-      <Row className='mt-5 itens' id="produtos"  data-aos="fade-right">
+      <Row className='mt-5 itens' id="produtos"  >
+      
     <Col>
 <Card  className="cards" style={{ width: '18rem',borderRadius:'10px' }}>
   <Card.Img variant="top" 
@@ -243,7 +245,7 @@ export default function Cards() {
 </Card>
 </Col>
 </Row>
-      </Collapse>
+</Collapse>
 </Container>
 
 
