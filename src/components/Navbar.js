@@ -31,8 +31,8 @@ function Navigation() {
   <Row>
     <Col><h1 className='max-w mt-5'>Descubra, colete e venda NFTs extraordinários</h1>
     <p className='mt-5'>Somos o primeiro NFT marketplace do Brasil</p>
-    <Button variant="primary"  className='m-5'><a href="#cards" className="CardLink">Explorar</a></Button>
-    <Button variant="secondary"  className='m-5'><a href="#contato" className="CardLink"> Contato</a></Button>
+    <a href="#cards" className="CardLink"><Button variant="primary"  className='m-5'>Explorar</Button></a>
+    <a href="#contato" className="CardLink"><Button variant="secondary"  className='m-5'>Contato</Button></a>
     </Col>
 
 

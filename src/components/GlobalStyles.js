@@ -48,7 +48,6 @@ h2{
   color:#f1f1f1;
 }
 h3{
-  
   font-size:40px;
   font-weight:900;
   color:#f1f1f1;
@@ -60,14 +59,9 @@ p{
   font-size:30px;
   color:#cccccc;
   opacity:0.9;
-  transition:1s;
 }
 p:hover{
   color:#cccccc;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition:1s;
 }
 
 .img-10{
@@ -88,8 +82,13 @@ box-shadow: 5px 10px #888888;
 border:2px;
 background: #222222;
 color:#e1e1e1;
+transition: 1.5s;
     &a{
     color:#e1e1e1;
+    }
+    &:hover{
+      transform: scale(1.02);
+      box-shadow: 0 10px 11px rgba(33,33,33,.9);
     }
 }
 .PriceItem{
